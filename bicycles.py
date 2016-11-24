@@ -3,7 +3,7 @@ from wheels import *
 from frames import *
 
 class Bicycle(object):
-
+    
     def __init__(self, model, wheels, frame):
         self.model = model
         self.wheels = wheels
@@ -20,8 +20,7 @@ class Bicycle(object):
         frameCost = self.frame.returnCost()
         totalCost = wheelCost + frameCost
         return totalCost
-   
-    
+        
     
 class Schwinn(Bicycle):
     model = "Schwinn"
@@ -76,3 +75,6 @@ class Lucky(Bicycle):
     
     def __init__(self):
         super().__init__(Lucky.model, Lucky.wheels, Lucky.frame)
+
+
+

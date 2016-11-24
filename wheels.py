@@ -12,14 +12,14 @@ class Wheels(object):
 class Firestone(Wheels):
     model = "Firestone"
     weight = 10
-    cost = 50.00
+    cost = 80.00
     
 class Michelin(Wheels):
     model = "Michelin"
     weight = 6
-    cost = 62.00
+    cost = 175.00
     
 class Bridgewaters(Wheels):
     model = "Bridgewaters"
     weight = 7
-    cost = 45.00
+    cost = 50.00
