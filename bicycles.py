@@ -22,8 +22,6 @@ class Bicycle(object):
         return totalCost
    
     
-    #def updateModel(self, component1, model1, component2 = None, model2 = None):
-    #    pass
     
 class Schwinn(Bicycle):
     model = "Schwinn"
