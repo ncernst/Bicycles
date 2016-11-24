@@ -8,7 +8,7 @@ class Bicycle(object):
         self.model = model
         self.wheels = wheels
         self.frame = frame
-    
+
     def weight(self):
         wheelWeight = self.wheels.returnWeight()
         frameWeight = self.frame.returnWeight()
@@ -26,7 +26,6 @@ class Schwinn(Bicycle):
     model = "Schwinn"
     wheels = Firestone()
     frame = Carbonite()
-        
     def __init__(self):
         super().__init__(Schwinn.model, Schwinn.wheels, Schwinn.frame)
         

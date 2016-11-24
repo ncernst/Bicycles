@@ -11,13 +11,16 @@ class BikeShop(object):
         self.margin = margin
         self.inventory = {"Schwinn" : 10, "Huffy" : 10, "Tough Stuff" : 10, "Navigator" : 10, "Cruiser" : 10, "Lucky" : 10}
         
-    def stockInventory(self):
+    def stockInventory(self, manufacturer):
         for bike in self.inventory:
-            print("You have {} {} bikes in your inventory. How many {} bikes would you like to add?"
-            .format(self.inventory[bike], bike, bike))
-            
-            add = input(">>> ")
-            self.inventory[bike] += int(add)
+            print("You have {} {} bikes in your inventory.".format(self.inventory[bike], bike))
+        
+        print("Which bike would you like to add?")   
+        model = input(">>> ")
+        print("How many do you want?")
+        many = input(">>> ")
+        self.inventory[model] += int(many)
+        manufacturer.wholesellBikes(model, many)
     
     def checkInventory(self, customer = None, sale = False):
         if customer != None and sale == False:
