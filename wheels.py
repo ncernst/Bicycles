@@ -8,18 +8,7 @@ class Wheels(object):
         
     def returnCost(self):
         return self.cost
-    
-class Firestone(Wheels):
-    model = "Firestone"
-    weight = 10
-    cost = 80.00
-    
-class Michelin(Wheels):
-    model = "Michelin"
-    weight = 6
-    cost = 175.00
-    
-class Bridgewaters(Wheels):
-    model = "Bridgewaters"
-    weight = 7
-    cost = 50.00
+
+Firestone = Wheels("Firestone", 10, 80.00) 
+Michelin = Wheels("Michelin", 6, 175.00) 
+Bridgewaters = Wheels("Bridgewaters", 7, 50.00) 
